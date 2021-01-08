@@ -79,7 +79,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'django-learning',
         'USER': 'postgres',
-        'PASSWORD': '1234'
+        'PASSWORD': '1234',
+        'HOST': 'localhost'
     }
 }
 
