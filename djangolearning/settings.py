@@ -38,6 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    #third party
+
+    #own
+    'product',
 ]
 
 MIDDLEWARE = [
@@ -76,8 +81,8 @@ WSGI_APPLICATION = 'djangolearning.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'django-learning',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'django',
         'USER': 'postgres',
         'PASSWORD': '1234',
         'HOST': 'localhost'
