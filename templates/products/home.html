@@ -4,8 +4,8 @@
     <h1>My Home</h1>
     <p>Home list of products</p>
     <ul>
-        {% for item in my_list %}
-            <li>{{item}}</li>
+        {% for product in products %}
+            <li>{{product.title}}</li>
         {% endfor %}
     </ul>
 {% endblock %}
