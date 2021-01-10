@@ -2,6 +2,10 @@
 
 {% block content %}
     <h1>My Home</h1>
-    <p>Home template</p>
-    <p>{{my_text}}</p>
+    <p>Home list of products</p>
+    <ul>
+        {% for item in my_list %}
+            <li>{{item}}</li>
+        {% endfor %}
+    </ul>
 {% endblock %}
