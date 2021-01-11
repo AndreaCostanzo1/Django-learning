@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     #third party
 
     #own
-    'product',
 ]
 
 MIDDLEWARE = [
@@ -61,9 +60,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, 'templates/products'),
-        ],
+            
+         ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
