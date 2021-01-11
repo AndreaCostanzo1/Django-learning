@@ -1,10 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import './index.css';
 
 ReactDOM.render(
-  <div>
-    <h1>My front-end</h1>
-  </div>,
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" render={props=>{
+        return(
+          <div>
+            
+          </div>
+        );
+      }}/>
+      <Redirect from="/test" to="/"/>
+    </Switch>
+  </BrowserRouter>,
   document.getElementById('root')
 );
