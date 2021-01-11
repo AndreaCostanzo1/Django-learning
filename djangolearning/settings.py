@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     #third party
 
     #own
+    'frontend',
 ]
 
 MIDDLEWARE = [
@@ -60,7 +61,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            
+
          ],
         'APP_DIRS': True,
         'OPTIONS': {
